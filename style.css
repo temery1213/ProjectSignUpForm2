@@ -1,0 +1,155 @@
+/* Modern CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #app {
+    isolation: isolate;
+  }
+  /* */
+
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(98, 0, 190);
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    max-width: 500px;
+    
+}
+.mainContent {
+    width: 50%;
+    display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;      
+        text-align: center;   
+}
+
+.Cthulhu {
+    width: 100%;
+    height: 50%;
+    max-width: 500px;
+    
+    
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+.mainContent {
+    flex: 1;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: calc(2em / 3);
+    }
+
+    .layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sideBar {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .Cthulhu {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainContent {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;      
+        text-align: center;   
+    }
+
+    .ritual {
+        width: 100%;
+    }
+}
+
+
+.footer {
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.bannerImage {
+    height: 20vh;
+    width: 100vw;
+}
+
+.container {
+    min-height: calc(100% - 20vh);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.ritual {
+    width: 70%;
+    height: auto;
+    justify-self: center;
+    padding-top: 100px;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px rgb(247, 0, 173);
+}
+
+.mainContent p {
+    padding-bottom: 30px;
+}
