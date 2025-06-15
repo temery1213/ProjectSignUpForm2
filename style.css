@@ -81,7 +81,7 @@ body {
     padding: 2rem;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
     body {
         font-size: calc(2em / 3);
     }
@@ -147,9 +147,55 @@ body {
 }
 
 h1 {
-    text-shadow: 2px 2px 2px rgb(247, 0, 173);
+    text-shadow: 2px 4px 4px rgb(247, 0, 173);
 }
 
 .mainContent p {
     padding-bottom: 30px;
+}
+
+button {
+    padding: 5px;
+}
+
+.Form {
+    width: 100%;
+    height: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    border: 1px solid;
+    border-radius: 20px;
+    max-width: 75%;
+}
+
+
+
+.Form input {
+    width: 10%;
+    
+   
+}
+
+
+
+.Form input:focus {
+    border-color: rgb(240, 4, 248);
+    border-radius: 100px;
+   
+}
+
+.bottomTentacle {
+    width: 5em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.submit {
+    background-color: rgb(42, 5, 53);
+    color: rgb(223, 7, 243);
 }
