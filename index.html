@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -37,18 +36,28 @@
                 <input type="tel" id="tel" name="tel"><br>
 
                 <label for="password">Password: </label><br>
-                <input type="password" id="password" name="password"><br>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
                 <label for="confirmPassword">Confirm Password: </label><br>
-                <input type="password" id="confirmPassword" name="confirmPassword"></input><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></input><br>
+                <p id="matchMessage" class="invalid">Passwords must match</p>
+                
 
                 <button type="submit" class="submit">SUBMIT!</button>
             </form>
             
+            <div id="message">
+              <h3>Password must contain the following:</h3>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
             
           </div>
         </div>
     
         <footer class="footer"> <img src="./images/tentacle-svgrepo-com.svg" alt="" class="bottomTentacle"></footer>
    </div>
+   <script src="javascript.js"></script>
   </body>
 </html>

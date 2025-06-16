@@ -176,7 +176,7 @@ button {
 
 .Form input {
     width: 10%;
-    
+    border-radius: 100px;
    
 }
 
@@ -184,7 +184,8 @@ button {
 
 .Form input:focus {
     border-color: rgb(240, 4, 248);
-    border-radius: 100px;
+    width: 50%;
+    border-radius: 0px;
    
 }
 
@@ -199,3 +200,37 @@ button {
     background-color: rgb(42, 5, 53);
     color: rgb(223, 7, 243);
 }
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
