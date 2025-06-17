@@ -115,6 +115,10 @@ body {
     .ritual {
         width: 100%;
     }
+
+    .Form {
+      flex-direction: column;
+    }
 }
 
 
@@ -160,33 +164,33 @@ button {
 
 .Form {
     width: 100%;
-    height: 50%;
+    height: auto;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 1em;
     border: 1px solid;
     border-radius: 20px;
     max-width: 75%;
+    padding: 10px;
 }
 
 
 
 .Form input {
-    width: 10%;
-    border-radius: 100px;
-   
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  transition: border-color 0.3s ease;
 }
-
 
 
 .Form input:focus {
     border-color: rgb(240, 4, 248);
-    width: 50%;
-    border-radius: 0px;
-   
+    outline: none;
 }
 
 .bottomTentacle {
@@ -234,3 +238,29 @@ button {
     left: -35px;
     content: "✖";
   }
+
+
+  .form-row {
+    display: flex;
+    flex-direction: column; /* Or row, see next tip */
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 700px) {
+    .form-row {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-row label {
+        width: 30%;
+        text-align: right;
+        margin-right: 1em;
+    }
+
+    .form-row input {
+        width: 50%;
+    }
+}

@@ -20,29 +20,47 @@
             <p>Long has Cthulhu waited to take what which is owed. Will you answer his call?</p>
             
 
-         <!--<img src="images/ritual.jpeg" alt="ritual" class="ritual">-->
             <form action="" method="post" class="Form">
 
-                <label for="fName">First Name: </label><br>
-                <input type="text" id="fname" name="fname"><br>
+              <div class="form-row">
+                <label for="fName">First Name:</label>
+                <input type="text" id="fname" name="fname">
+              </div>
             
-                <label for="lname">Last name: </label><br>
-                <input type="text" id="lname" name="lname"><br>
-
-                <label for="email">Email: </label><br>
-                <input type="email" id="email" name="email"><br>
-
-                <label for="tel">Phone Number: </label><br>
-                <input type="tel" id="tel" name="tel"><br>
-
-                <label for="password">Password: </label><br>
-                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
-                <label for="confirmPassword">Confirm Password: </label><br>
-                <input type="password" id="confirmPassword" name="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></input><br>
-                <p id="matchMessage" class="invalid">Passwords must match</p>
-                
-
-                <button type="submit" class="submit">SUBMIT!</button>
+              <div class="form-row">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname">
+              </div>
+            
+              <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+              </div>
+            
+              <div class="form-row">
+                <label for="tel">Phone Number:</label>
+                <input type="tel" id="tel" name="tel">
+              </div>
+            
+              <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  required>
+              </div>
+            
+              <div class="form-row">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  required>
+              </div>
+            
+              <p id="matchMessage" class="invalid">Passwords must match</p>
+            
+              <button type="submit" class="submit">SUBMIT!</button>
             </form>
             
             <div id="message">
@@ -53,8 +71,6 @@
               <p id="length" class="invalid">Minimum <b>8 characters</b></p>
             </div>
             
-          </div>
-        </div>
     
         <footer class="footer"> <img src="./images/tentacle-svgrepo-com.svg" alt="" class="bottomTentacle"></footer>
    </div>
